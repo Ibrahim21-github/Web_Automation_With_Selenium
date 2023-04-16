@@ -39,7 +39,7 @@ public class Rokomari extends BaseDriverSetup {
 		//rokomariHomePage.scrollToElement(rokomariHomePage.BROWSER_BY_EXAM);
 	}
 	
-	@Test(priority=2, description="Hover and select the Author By Humaon Ahmed")
+	@Test(priority=2, description="Move To Element By Author and select the Author and click  By Humaon Ahmed")
 	@Epic("EP002")
 	@Feature("Feature2:Author By Humaon Ahmed")
 	@Step("Hover and Click By Author")

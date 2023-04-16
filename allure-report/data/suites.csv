@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Apr 17 05:01:22 BDT 2023","Mon Apr 17 05:01:35 BDT 2023","12815","Suite","Test","testcases.Rokomari","testcases.Rokomari","rokomarihomeTest","Verify the url browser",""
+"passed","Mon Apr 17 05:01:35 BDT 2023","Mon Apr 17 05:01:48 BDT 2023","12657","Suite","Test","testcases.Rokomari","testcases.Rokomari","selectByAuthor","Hover and select the Author By Humaon Ahmed",""
+"passed","Mon Apr 17 05:02:08 BDT 2023","Mon Apr 17 05:02:27 BDT 2023","19129","Suite","Test","testcases.Rokomari","testcases.Rokomari","validSignInTest","Buy book after login the page",""
+"passed","Mon Apr 17 05:01:48 BDT 2023","Mon Apr 17 05:02:08 BDT 2023","20284","Suite","Test","testcases.Rokomari","testcases.Rokomari","filterCatagory","Try scrolling down on the page Catagories",""
+"passed","Mon Apr 17 05:02:27 BDT 2023","Mon Apr 17 05:02:35 BDT 2023","7470","Suite","Test","testcases.Rokomari","testcases.Rokomari","provideShippingInformation","Verify provide information",""
