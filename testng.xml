@@ -3,7 +3,7 @@
 <suite thread-count="2" parallel="tests" name="Suite">
   <test thread-count="2" parallel="tests" name="Test">
     <packages>
-      <package name="testcases.RokomariHomePageTest"/>
+      <package name="testcases"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

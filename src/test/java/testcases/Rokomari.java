@@ -1,5 +1,7 @@
 package testcases;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
 import io.qameta.allure.Epic;
@@ -48,12 +50,6 @@ public class Rokomari extends BaseDriverSetup {
 		rokomariHomePage.moveOnElement(rokomariHomePage.SELECT_BY_AUTORS);
 		rokomariHomePage.clickOnElement(rokomariHomePage.SELECT_BY_WRITTER);
 		Thread.sleep(2000);
-		rokomariHomePage.closedPopup(rokomariHomePage.popup);
-		//Scroll filtering top to down page
-		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.SCROLL_FILTERING);
-		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.CHECK_BOX_CLICK_RECENT);
-		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.SCROLL_FILTERING);
-		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.CHECK_BOX_CLICK_HISTORY);
 	}
 	
 	
@@ -64,9 +60,22 @@ public class Rokomari extends BaseDriverSetup {
 	@Severity(SeverityLevel.MINOR)
 	public void filterCatagory() throws InterruptedException {
 		rokomariHomePage.closedPopup(rokomariHomePage.popup);
-		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.HOVER_AND_SELECT);
-		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.HOVER_AND_SELECT);	
-//		getDriver().get(rokomariCatagoriesPage.ENTER_NEW_PAGE );
+		//Scroll filtering top to down page
+		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.SCROLL_FILTERING);
+		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.CHECK_BOX_CLICK_RECENT);
+		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.SCROLL_FILTERING_AGAIN);
+		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.CHECK_BOX_CLICK_HISTORY);
+		Thread.sleep(2000);
+		
+		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.SCROLL_HOVER_AND_SELECT);
+		rokomariCatagoriesPage.moveOnElement(rokomariCatagoriesPage.HOVER_AND_SELECT);
+		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.HOVER_AND_CLICK);
+		getDriver().get(rokomariCatagoriesPage.ENTER_NEW_PAGE );
+		// Opens a new tab and switches to new tab
+		//getDriver().switchTo().newWindow(WindowType.TAB);
+		//Switch back to the old tab or window
+		String originalWindow = getDriver().getWindowHandle();
+		getDriver().switchTo().window(originalWindow);
 		rokomariCatagoriesPage.clickOnElement(rokomariCatagoriesPage.ADD_BOOK_TO_CART);
 //		Scroll Down and go to Next Page
 //		rokomariCatagoriesPage.scrollToElement(rokomariCatagoriesPage.FIND_NEXT_PAGE);
@@ -75,7 +84,7 @@ public class Rokomari extends BaseDriverSetup {
 		
 		
 	}
-	
+
 	@Test(priority=4, description="Buy book after login the page")
 	@Epic("EP004")
 	@Feature("Feature4:Sign in")
@@ -103,9 +112,9 @@ public class Rokomari extends BaseDriverSetup {
 		//rokomariHomePage.closedPopup(rokomariHomePage.popup);
 		rokomariCatagoriesPage.clickOnElement(rokomariHomePage.PLACED_ORDER_BUTTON);
 		rokomariHomePage.writeText(provideShippingInformation.ALTERNATIVE_PHONE_NUMBER_INPUT, "1234");
-		rokomariHomePage.selectElementWithText(provideShippingInformation.PROVED_SHIPPING_INFORMATION,"");
-		rokomariHomePage.selectElementWithText(provideShippingInformation.CITY_SELECT,"");
-		rokomariHomePage.selectElementWithText(provideShippingInformation.TOWN_SELECT,"");
+		rokomariHomePage.selectElementWithText(provideShippingInformation.PROVED_SHIPPING_INFORMATION,"I");
+		//rokomariHomePage.selectElementWithText(provideShippingInformation.CITY_SELECT,"ঢাকা");
+		//rokomariHomePage.selectElementWithText(provideShippingInformation.TOWN_SELECT,"");
 		rokomariHomePage.writeText(provideShippingInformation.ADDRESS_INPUT_FLIED, "Mirpur-10,Dhaka");
 //		rokomariCatagoriesPage.writeText(rokomariCatagoriesPage.SENDS_NUMBER,"2222335");
 	}

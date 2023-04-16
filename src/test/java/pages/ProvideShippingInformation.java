@@ -7,7 +7,7 @@ public class ProvideShippingInformation extends BasePage {
 	public By PHONE_NUMBER_INPUT = By.xpath("//fieldset[@class='group']//input[@id='phone']");
 	public By ALTERNATIVE_PHONE_NUMBER_INPUT = By.xpath("//fieldset[@class='group']//input[@id='phone2']");
 	public By PROVED_SHIPPING_INFORMATION = By.xpath("//select[@id='js--country']");
-	public By CITY_SELECT = By.xpath("//select[@id='js--city']");
+	public By CITY_SELECT = By.xpath("//select[@id='js--city'][1]/option[@value='2']");
 	public By TOWN_SELECT = By.xpath("//select[@id='js--area']");
 	public By ADDRESS_INPUT_FLIED = By.xpath("//fieldset[@class='mb-0']//textarea[@id='address']");
 }

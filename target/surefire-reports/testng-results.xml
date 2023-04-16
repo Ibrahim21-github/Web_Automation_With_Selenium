@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-17T04:50:20 BDT" name="Suite" finished-at="2023-04-17T04:51:40 BDT" duration-ms="79787">
+    <groups>
+    </groups>
+    <test started-at="2023-04-17T04:50:20 BDT" name="Test" finished-at="2023-04-17T04:51:40 BDT" duration-ms="79787">
+      <class name="testcases.Rokomari">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:50:20 BDT" name="setBrowser" finished-at="2023-04-17T04:50:39 BDT" duration-ms="18264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method signature="rokomarihomeTest()[pri:1, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:50:39 BDT" name="rokomarihomeTest" description="Verify the url browser" finished-at="2023-04-17T04:50:53 BDT" duration-ms="13929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rokomarihomeTest -->
+        <test-method signature="selectByAuthor()[pri:2, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:50:53 BDT" name="selectByAuthor" description="Hover and select the Author By Humaon Ahmed" finished-at="2023-04-17T04:51:04 BDT" duration-ms="10547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectByAuthor -->
+        <test-method signature="filterCatagory()[pri:3, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:51:04 BDT" name="filterCatagory" description="Try scrolling down on the page Catagories" finished-at="2023-04-17T04:51:11 BDT" duration-ms="7722" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (165, 802)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6da890b3b22a427855be7ad5a263533, clickElement {id=feca3494-0d94-465d-813b-6a2667ecc5cc}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.48, ms:edgeOptions: {debuggerAddress: localhost:60590}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\Ibrahim\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60590/devtoo..., se:cdpVersion: 112.0.1722.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (d6da890b3b22a427855be7ad5a263533)] -> xpath: //label[contains(text(),'রচনা সংকলন ও সমগ্র')]]
+Session ID: d6da890b3b22a427855be7ad5a263533]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (165, 802)
+  (Session info: MicrosoftEdge=112.0.1722.48)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d6da890b3b22a427855be7ad5a263533, clickElement {id=feca3494-0d94-465d-813b-6a2667ecc5cc}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.48, ms:edgeOptions: {debuggerAddress: localhost:60590}, msedge: {msedgedriverVersion: 112.0.1722.48 (d0924f8b9cb9..., userDataDir: C:\Users\Ibrahim\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60590/devtoo..., se:cdpVersion: 112.0.1722.48, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (d6da890b3b22a427855be7ad5a263533)] -> xpath: //label[contains(text(),'রচনা সংকলন ও সমগ্র')]]
+Session ID: d6da890b3b22a427855be7ad5a263533
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pages.BasePage.clickOnElement(BasePage.java:30)
+at testcases.Rokomari.filterCatagory(Rokomari.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterCatagory -->
+        <test-method signature="validSignInTest()[pri:4, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:51:12 BDT" name="validSignInTest" description="Buy book after login the page" finished-at="2023-04-17T04:51:27 BDT" duration-ms="15532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSignInTest -->
+        <test-method signature="provideShippingInformation()[pri:5, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:51:27 BDT" name="provideShippingInformation" description="Verify provide information" finished-at="2023-04-17T04:51:38 BDT" duration-ms="10766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideShippingInformation -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.Rokomari@8e50104]" started-at="2023-04-17T04:51:38 BDT" name="quitBrowser" finished-at="2023-04-17T04:51:40 BDT" duration-ms="2110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- testcases.Rokomari -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

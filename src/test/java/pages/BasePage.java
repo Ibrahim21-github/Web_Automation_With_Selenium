@@ -3,7 +3,9 @@ package pages;
 import static utilities.BaseDriverSetup.getDriver;
 
 import java.io.ByteArrayInputStream;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -60,5 +62,13 @@ public class BasePage {
 				System.out.println("Popup Not found to perform close action");
 			}
 		}
-	}   
+	} 
+	public List<String> windowHandling(By locator){
+		Set<String> windowHandles = getDriver().getWindowHandles();
+		ArrayList<String> windowsArrayList = new ArrayList<>(windowHandles);
+		int size = windowsArrayList.size();
+		System.out.println("Window count : " + size);
+		return windowsArrayList;
+		
+	}
 }
